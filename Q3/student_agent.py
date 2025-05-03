@@ -13,7 +13,7 @@ class Agent(object):
         self.action_dim = self.env.action_space.shape[0]
 
         self.agent = SACAgent(self.state_dim, self.action_dim, self.action_space)
-        self.agent.load_checkpoint('sac_icm_ckpt_walk_1300000.pth')
+        self.agent.load_checkpoint('sac_icm_ckpt_walk_3000000.pth')
 
 
     def act(self, observation):
